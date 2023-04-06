@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_put_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Put your query"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_question" />
+
+
+    <EditText
+        android:id="@+id/edit_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_put_query" />
+
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Result"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_query" />
+
+
+    <TextView
+        android:id="@+id/tv_state_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_query" />
+
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_state_title" />
+
+
+    <TextView
+        android:id="@+id/tv_level_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="220dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_state_title"
+        app:layout_constraintTop_toBottomOf="@id/btn_query" />
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="220dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_state"
+        app:layout_constraintTop_toBottomOf="@id/tv_level_title" />
+
+
+    <TextView
+        android:id="@+id/tv_county_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="County"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_state" />
+
+
+    <TextView
+        android:id="@+id/tv_county"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_county_title" />
+
+
+    <TextView
+        android:id="@+id/tv_startdate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="220dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_county_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_level" />
+
+    <TextView
+        android:id="@+id/tv_startdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="220dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_county"
+        app:layout_constraintTop_toBottomOf="@id/tv_startdate_title" />
+
+
+    <TextView
+        android:id="@+id/tv_newcase_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Case Past 7 days"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_county" />
+
+
+    <TextView
+        android:id="@+id/tv_newcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_newcase_title" />
+
+
+    <TextView
+        android:id="@+id/tv_enddate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="220dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_newcase_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_startdate" />
+
+    <TextView
+        android:id="@+id/tv_enddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="220dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_newcase"
+        app:layout_constraintTop_toBottomOf="@id/tv_enddate_title" />
+
+
+    <TextView
+        android:id="@+id/tv_newcase_rate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Case Rate Past 7 days(100K)"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_newcase" />
+
+
+    <TextView
+        android:id="@+id/tv_newcase_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_newcase_rate_title" />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
